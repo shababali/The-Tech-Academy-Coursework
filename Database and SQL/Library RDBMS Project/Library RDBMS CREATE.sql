@@ -60,7 +60,7 @@ CREATE TABLE LIBRARY_BRANCH --Refference Table
 (
 BranchID int NOT NULL PRIMARY KEY,
 BranchName varchar (50) NOT NULL,
-[Address] varchar (100) NOT NULL
+LBAddress varchar (100) NOT NULL
 )
 GO
 
@@ -68,10 +68,10 @@ GO
 CREATE TABLE BORROWER --Refference Table
 (
 CardNo int NOT NULL PRIMARY KEY,
-BLastName varchar (50) NOT NULL,
-BFirstName varchar (50) NOT NULL,--Semantic Change to SQL Drill Library Schema :- Separate Borrower Last Name and First Name
-[Address] varchar (100) NOT NULL,
-Phone varchar (25) NOT NULL
+LastName varchar (50) NOT NULL,
+FirstName varchar (50) NOT NULL,--Semantic Change to SQL Drill Library Schema :- Separate Borrower Last Name and First Name
+BrAddress varchar (100) NOT NULL,
+BrPhone varchar (25) NOT NULL
 )
 GO
 
@@ -80,8 +80,8 @@ GO
 			(
 			PublisherID int NOT NULL PRIMARY KEY, --Inclusion of a semantic primary key PublisherID
 			PublisherName varchar (50) NOT NULL,  
-			[Address] varchar (100) NOT NULL,
-			Phone varchar (25) NOT NULL
+			PubAddress varchar (100) NOT NULL,
+			PubPhone varchar (25) NOT NULL
 			)
 			GO
 
@@ -92,7 +92,7 @@ GO
 
 		CREATE TABLE BOOK_AUTHORS 
 		(
-		BookID int NOT NULL PRIMARY KEY,   
+		BookID int NOT NULL,   
 		AuthorLastName varchar (50) NOT NULL, --Semantic Change to SQL Drill Library Schema :- Separate Author Last Name and First Name
 		AuthorFirstName varchar (50) NOT NULL,
 		CONSTRAINT fk_PerBOOK_AUTHORS 
@@ -103,7 +103,7 @@ GO
 
 		CREATE TABLE BOOK_COPIES 
 		(						 
-		BookID int NOT NULL PRIMARY KEY, 
+		BookID int NOT NULL, 
 		BranchID int NOT NULL,			 
 		No_of_Copies int NOT NULL,
 		CONSTRAINT fk_PerBOOK_COPIES		
@@ -115,7 +115,7 @@ GO
 		
 		CREATE TABLE BOOK_LOANS 
 		(						
-		BookID int PRIMARY KEY NOT NULL, 
+		BookID int NOT NULL, 
 		BranchID int NOT NULL,			 
 		CardNo int NOT NULL,
 		DateOut date NOT NULL, --date data type format is YYYY-MM-DD.
