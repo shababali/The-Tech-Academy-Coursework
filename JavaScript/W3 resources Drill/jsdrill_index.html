@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>index</title>
+		<link rel="" href="">
+	</head>
+	
+	<body>
+    <header>
+        <h1>JavaScript Exercises</h1>
+    </header>
+	<hr>
+    <div> <!--Question 1-->
+        <p> 1. Write a JavaScript program to display the current day and time in 
+			the following format:<br>
+			Sample Output : Today is : Friday.<br> 
+			Current time is : 4 PM : 50 : 22 
+        </p>
+        <input type="button" onclick="Question1 ()" value="Question 1 Solution" />
+        <p>
+            Today is: <span id="Q1Day"></span>
+        </p>
+        <p>
+            Current Time is: <span id="Q1CurrentTime"></span>
+        </p>
+    </div> <!--End Question 1-->
+	
+	<hr>
+	
+	<div> <!--Question 2-->
+        <p>
+            2. Write a JavaScript program to print the contents of the current window.
+        </p>
+        <input type="button" onclick="Question2 ()" value="Question 2 Solution" />
+    </div> <!--End Question 2-->
+	
+	<hr>
+	
+	<div> <!--Question 3-->
+        <p> 3. Write a JavaScript program to get the current date. Expected Output : <br>
+			mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy:
+        </p>
+        <input type="button" onclick="Question3 ()" value="Question 3 Solution" />
+        <p>
+            Current Date: <span id="Q3CurrentDate"></span>
+        </p>
+    </div> <!--End Question 3-->
+	
+	<hr>
+	
+	<div> <!--Question 4-->
+        <p> 4. Write a JavaScript program to find the area of a triangle where lengths of the 
+			three of its sides are 5, 6, 7.
+        </p>
+        <input type="button" onclick="Question4 ()" value="Question 4 Solution" />
+        <p>
+            Triangle Area = <span id="Q4AreaTriangle"></span>
+        </p>
+    </div> <!--End Question 4-->
+	
+    <hr>
+	
+	<div> <!--Question 5-->
+		<p>5. Write a JavaScript program to rotate the string 'w3resource' in right direction by 
+		   periodically removing one letter from the end of the string and attaching it to the front.
+		</p>
+        <p>
+            <span id="Q5String" onmouseover = "Question5(1)" onmouseout="Question5(2)">w3resource </span>
+        </p>
+    </div> <!--End Question 5-->
+	
+    <hr>
+	
+    <div> <!--Question 6-->
+        <p> 6. Write a JavaScript program to determine whether a given year is a leap year in the 
+			Gregorian calendar.
+        </p>
+            <input id="Q6InputYear" type="text" placeholder="Enter a leap year query" />
+            <input type="button" onclick="Question6 ()" value="Question 6 Solution" />
+        <p>
+            <span id="Q6YearResult"></span>
+        </p>
+    </div> <!--End Question 6-->
+	
+    <hr>
+	
+    <div> <!--Question 7-->
+        <p> 
+		7. Write a JavaScript program to find which 1st January is being a Sunday between 2014 and 2050.
+        </p>
+        <input type="button" onclick="Question7()" value="Run Question7" />
+        <p>
+            <span id="Q7Span"></span>
+        </p>
+    </div>
+	
+	<hr>
+
+	<div> <!--Question 8-->
+        <p> 8. Write a JavaScript program where the program takes a random integer between 1 to 10, the user 
+			is then prompted to input a guess number. If the user input matches with guess number, the program 
+			will display a message "Good Work", otherwise display a message "Not matched".
+        </p>
+            <input id="UserNumber" type="text" placeholder="Guess a number 1-10" />
+            <input type="button" onclick="Question8 ()" value="Question 8 Solution" />
+        <p>
+            <span id="Q8NumberComparison"></span>
+        </p>
+    </div> <!--End Question 8-->
+	
+	<hr>
+	
+   
+    <div> <!--Question 9-->
+        <p>
+            9. Write a JavaScript program to calculate days left until next Christmas.
+        </p>
+        <p>
+            <input type="button" onclick="Question9()" value="Question 9 Solution" />
+        </p>
+        <p>
+            <span id="Q9DaysTillChristmasAnswer"></span>
+        </p>
+    </div> <!--End Question 9-->
+	
+	<hr>
+    
+	
+    <div> <!--Question 10-->
+        <p> 10. Write a JavaScript program to calculate multiplication and division of two 
+			numbers (input from user).
+        </p>
+		<form> 
+        <p>
+            <input id="Operand1" type="text" placeholder="Operand 1" />
+            <input id="Operand2"  type="text" placeholder="Operand 2" />
+        </p>
+        <p>
+            <input type="button" onclick="Question10(1)" value="Multiply" />
+            <input type="button" onclick="Question10(2)" value="Divide" />
+        </p>
+		<form> 
+        <p>
+            The Result Is: <span id="Q10FunctionResult"></span>
+        </p>
+    </div> <!--End Question 10-->
+	
+	<hr>
+    
+    <div> <!--Question 11-->
+        <p> 11. Write a JavaScript program to convert temperatures to and from celsius, fahrenheit. <br> 
+		[Formula : C/5 = (F-32)/9 [ where C = temperature in celsius and F = temperature in fahrenheit ] <br> 
+		Expected Output : <br>
+		60°C is 140 °F <br>
+		45°F is 7.222222222222222°C <br>
+        </p>
+        <p>
+            <input type="text" id="Temp" placeholder="Enter Temperature" />
+            <input type="radio" id="CTemp" name="temp-unit" value="C" checked="checked"/>Celcius
+            <input type="radio" id="FTemp" name="temp-unit" value="F" checked="checked"/>Fahrenheit<br />
+            <input type="button" id="ConvertTemp" value="Convert Temperature" onclick="Question11()" />
+        </p>
+        <p>
+			<span id="Q11Conversion"></span>
+        </p>
+    </div> <!--End Question 11-->
+	
+	<hr>
+	
+    <div> <!--Question 12-->
+        <p>
+            12. Write a JavaScript program to get the website URL (loading page).
+        </p>
+        <p>
+            <input type="button" onclick="Question12()" value="Question 12 Solution" />
+        </p>
+        <p>
+            The website URL is: <span id="Q12WebsiteValue"></span>
+        </p>
+    </div> <!--End Question 12-->
+	
+		<footer>
+		</footer>
+		
+	<script type="text/javascript" src="script.js"></script>	
+		 
+	</body>
+	
+</html>
