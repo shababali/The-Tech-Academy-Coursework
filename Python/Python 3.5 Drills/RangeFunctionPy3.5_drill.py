@@ -1,4 +1,5 @@
-
+# Python: 3.6.0
+# Tech Academy Python Drill - Learning the Range Function.
 
 
 # Example
@@ -12,7 +13,8 @@ print('')
 #       [start] - starting from number...
 #       [stop] - stopping before number...
 #       [step] -  ‘count by’ number...
-#   ie range(10,0,-4)==[10,6,2]
+#   ie range(10,0,-4)==[10,6,2]
+
 
 
 ''' 1. Start IDLE and use the Python range() function with one parameter to display the
@@ -20,7 +22,8 @@ following:
 0
 1
 2
-3'''
+3
+'''
 print('DRILL 1')
 my_list1 = [0,1,2,3]
 my_list1_len = len(my_list1)
@@ -62,7 +65,8 @@ print('')
 8
 6
 4
-2'''
+2
+'''
 print('DRILL 3')
 my_list3 = [8,6,4,2]
 my_list3_len = len(my_list3)
