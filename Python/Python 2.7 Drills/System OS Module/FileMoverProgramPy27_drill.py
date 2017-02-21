@@ -2,7 +2,7 @@
 #
 # Author:         Shabab Ali
 #
-# Purpose:        Assignment to learn Python, GUI design and tkinter module.
+# Purpose:        Assignment to learn Python, Shutil module and OS module.
 #                 
 # Tested OS:      Code written and tested to work with Windows 7 Service Pack 1.
 

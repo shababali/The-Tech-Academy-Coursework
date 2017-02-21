@@ -3,7 +3,8 @@
 #
 # Author:         Shabab Ali
 #
-# Purpose:        Assignment to learn Python and OS module.
+# Purpose:        Assignment to learn Python, Shutil module and OS module.
+#                 Function Design and integration.
 #                 
 # Tested OS:      Code written and tested to work with Windows 7 Service Pack 1.
 
