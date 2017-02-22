@@ -62,8 +62,8 @@ def fileMove(source, destination): # Function accepts two parameters:(i)source l
 
 
 def program():
-    # Execcute fileMove function by inseting a desirable source and destination folder. Eg 'C:/Users/Student/Desktop/Folder-A'  
-    fileMove('C:/Users/Student/Desktop/Folder-A','C:/Users/Student/Desktop/Folder-B')
+    # Execute fileMove function by inseting a desirable source and destination folder. Eg 'C:/Users/Student/Desktop/Folder-A'  
+    fileMove('C:/Users/Student/Desktop/Folder-B','C:/Users/Student/Desktop/Folder-A')
 
 
 
