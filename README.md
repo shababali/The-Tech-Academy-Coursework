@@ -1,1 +1,1 @@
-Coursework in the Software Development Curriculum from The Tech Academy. This repository contains problems and solutions for coding in HTML and CSS, Database and SQL, Javascript and Python.
+The Tech Academy Software Development Curriculum - Coursework . This repository contains problems and solutions for coding in Hypertext Markup Language (HTML), Cascading Style Sheets (CSS), Javascript, Databases, Structured Query Language (SQL), and Python.
